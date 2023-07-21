@@ -1,6 +1,25 @@
-[![CircleCI](https://circleci.com/gh/serebrov/flask-vue-starter.svg?style=svg)](https://circleci.com/gh/serebrov/flask-vue-starter)
 
-Starter example app: Flask (SQLAlchemy, PostgreSQL) + Vue.js (Typescript), docker setup for backend and frontend.
+
+# Shortform - Mini Project
+
+## What is currently done
+- The web app is availabale here [https://flashcardapp-fe-uhrgp63gla-uc.a.run.app/](https://flashcardapp-fe-uhrgp63gla-uc.a.run.app/)
+- Study interface is implemented as required.
+- Admin interface is implemented as required + Full flashcard CRUD capabilities.
+- Implemented Multiple users.
+- Implemented as a single-page app.
+- The backend is hosted on Google Cloud Run, connected to a Postgres instance (both reside in the same VPC).
+- The frontend is exposed to the public internet (makes use of gcp ingress and LB), hosted on a different Cloud Run instance, communicating securely with the backend (they also reside in the same VPC)
+- The infrastructure is implemented in Terraform, Bash, and "few" ClickOps.
+
+## Future improvements
+- Add CI/CD (GH actions will be do), to automate building/ pushing images, and re-deploying to cloudrun 
+- Make the UI look better. This is where i'm not an expert so I didn't spend much time
+- For the study interface, it would be better to load the flashcards in a sorted qeue instead of calling the backend every time.
+- Move completetly away from Cloud Run and run it on Kubernetes. For better scale, lower cost, code structure, and easier dev experience.
+- I can keep mentioning more improvements depending on how far we want to go:) but for now, I think what I mentioned (especially improving the UI) would be enough given that we are looking to build an MVP
+
+# Setup
 
 Backend is powered by Flask, flask-rest-api, marshmallow and SQLAlchemy to create a solid framework for REST API backend development:
 
