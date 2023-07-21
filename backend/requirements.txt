@@ -1,0 +1,18 @@
+Flask==2.2.3
+Flask-Cors==3.0.10
+psycopg2-binary==2.9.3
+SQLAlchemy[mypy]==1.4.35
+Flask-SQLAlchemy==2.5.1
+alembic==1.7.7
+Flask-Migrate==3.1.0
+flask-smorest==0.40.0
+marshmallow==3.19.0
+pytest==7.2.2
+pytest-cov==3.0.0
+pytest-flask-sqlalchemy @ git+https://github.com/jeancochrane/pytest-flask-sqlalchemy.git@ea5c5ee935ed2d9cdc56061c243a6004d7c8fe7e
+pytest-mock==3.7.0
+Werkzeug
+Flask-Login==0.6.0 
+Flask-JWT-Extended
+gunicorn
+
