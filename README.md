@@ -1,6 +1,5 @@
 
 
-# Shortform - Mini Project
 
 ## What is currently done
 - The web app is availabale here [https://flashcardapp-fe-uhrgp63gla-uc.a.run.app/](https://flashcardapp-fe-uhrgp63gla-uc.a.run.app/)
